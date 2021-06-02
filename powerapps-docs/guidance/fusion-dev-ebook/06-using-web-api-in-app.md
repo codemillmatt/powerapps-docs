@@ -111,6 +111,13 @@ After the API Management service was created, Preeti published the Web API to ma
 
 Kiana and Maria can now work together to connect the app built using Power Apps to the Web API through the API Management service.
 
+> [!IMPORTANT]
+> You need to ensure your Power Apps environment is enabled for Dataverse. Although you will not be using Dataverse directly, when Power Apps creates a custom connector it stores the custom connector in Dataverse.
+>
+> To determine if your environment is Dataverse enabled, go to **[https://make.powerapps.com](https://make.powerapps.com)** and click on **Solutions** in the left-hand navigation. If Dataverse _is not enabled_, Power Apps will tell you that. If an empty list is displayed, Dataverse is enabled.
+>
+> To enable Dataverse, you need to have administrative access to the Power Apps environment, [please see this documentation](https://docs.microsoft.com/power-platform/admin/admin-settings) for more info.
+
 The first task is to create a custom connector that's used by the app to communicate with API Management. This involves exporting the API to the Power Apps environment used to create the app, which Kiana does as follows:
 
 1.  In the Azure portal, go to the page for the API Management service that Preeti created.
